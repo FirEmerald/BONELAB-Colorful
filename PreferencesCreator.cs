@@ -64,7 +64,7 @@ namespace Melon_Loader_Mod5
                 "<color=#" + WestHexcode + ">" + "u" + "</color>" +
                 "<color=#" + NorthWestHexcode + ">" + "l" + "</color>";
 
-            var category = Menu.CreatePage(SuperLongName, Color.white, maxElements: 9); //TODO temporarily set max elements to 9, avoids https://github.com/yowchap/BoneLib/issues/70
+            var category = Page.Root.CreatePage(SuperLongName, Color.white, maxElements: 9); //TODO temporarily set max elements to 9, avoids https://github.com/yowchap/BoneLib/issues/70
 
             category.CreateBool("Mod Toggle", Color.yellow, IsEnabled, new Action<bool>(OnSetEnabled));
 
